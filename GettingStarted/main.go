@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/dpnetca/ps_goGetStarted/controllers"
+	"github.com/dpnetca/psGo/GettingStarted/controllers"
 )
 
 func main() {

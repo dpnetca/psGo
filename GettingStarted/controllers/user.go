@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/dpnetca/ps_goGetStarted/models"
+	"github.com/dpnetca/psGo/GettingStarted/models"
 )
 
 type userController struct {
