@@ -1,1 +1,3 @@
-# Collection of learning Libraries from Pluralsight Courses
+# Learning
+
+A collection of code from different Pluralsight courses
