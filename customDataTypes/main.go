@@ -33,4 +33,27 @@ func main() {
 	fmt.Println(p4.ID())
 	fmt.Println(p4.Country())
 
+	name1 := Name{First: "Joe", Last: "Smith"}
+	name2 := Name{First: "Joe", Last: "Smith"}
+	if name1 == name2 {
+		fmt.Println("match1")
+	}
+
+	ssn1 := organization.NewSocialSecurityNumber("123-45-6789")
+	ssn2 := organization.NewSocialSecurityNumber("123-45-6789")
+	eu1 := organization.NewEurpoeanUnionIdentifier("123-45-6789", "France")
+
+	if ssn1 == ssn2 {
+		fmt.Println("match2")
+	}
+	if ssn1 == eu1 {
+		fmt.Println("match3")
+	}
+}
+
+type Name struct {
+	First string
+	Last  string
+	// Middle []string  this makaes it not comparable because memory layout is not predictable
+	//map, function also have same result
 }
